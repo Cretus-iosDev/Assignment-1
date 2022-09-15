@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="/Assignment_1/Button/Buttons.css" />
+  </head>
+  <body>
+    <table class="center" id="myTable">
+      <caption class="caption">
+        Assignment-1 (Button)
+      </caption>
+      <thead>
+        <th scope="col">S. No.</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Country</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Rutik</td>
+          <td>Maraskolhe</td>
+          <td>Chandrapur</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Hitesh</td>
+          <td>Umare</td>
+          <td>Pune</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Kashish</td>
+          <td>Ghadse</td>
+          <td>Nagpur</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Kunal</td>
+          <td>Meshram</td>
+          <td>Bhadravati</td>
+          <td>India</td>
+        </tr>
+        <tr>
+          <td class="serial_number">&nbsp;</td>
+          <td>Aniket</td>
+          <td>Pimpalkar</td>
+          <td>Amravati</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <button class="button_top" type="button" onclick="myFunction_top()">
+      Add row to top
+    </button>
+    <button class="button_bottom" type="button" onclick="myFunction_bottom()">
+      Add row to bottom
+    </button>
+
+    <script>
+      function myFunction_top() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = "";
+        cell2.innerHTML = "Ramesh";
+        cell3.innerHTML = "Yakkala";
+        cell4.innerHTML = "Mumbai";
+        cell5.innerHTML = "India";
+      }
+      function myFunction_bottom() {
+        var table = document.getElementById("myTable");
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
+        var cell5 = row.insertCell(4);
+        cell1.innerHTML = "";
+        cell2.innerHTML = "Suresh";
+        cell3.innerHTML = "Sharma";
+        cell4.innerHTML = "Gudur";
+        cell5.innerHTML = "India";
+      }
+    </script>
+  </body>
+</html>

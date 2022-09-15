@@ -1,0 +1,64 @@
+* {
+  border: 0;
+  padding: 0;
+}
+table,
+th,
+tr,
+td {
+  border: solid dodgerblue;
+  border-collapse: collapse;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Lucida Calligraphy";
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.center .caption {
+  padding: 10px 0 30px 0;
+  font-size: 35px;
+  font-family: "Lucida Calligraphy";
+  text-decoration: underline;
+  color: crimson;
+  font-weight: bold;
+}
+.center th {
+  font-size: 22px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#data {
+  margin-bottom: 10px;
+}
+#data input,
+button {
+  padding: 10px;
+  width: 90px;
+}
+.center {
+  counter-reset: serial-number;
+}
+.center td:first-child:before {
+  counter-increment: serial-number;
+  content: counter(serial-number);
+  text-align: center;
+}
+.button_top,
+.button_bottom {
+  background-color: dodgerblue;
+  border: 2px solid crimson;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Lucida Calligraphy";
+  font-size: 16px;
+  display: inline-block;
+  margin: auto -550px auto 600px;
+  cursor: pointer;
+  width: fit-content;
+}
